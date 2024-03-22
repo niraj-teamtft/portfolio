@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <!-- head start -->
+    <title>Contact Me - Niraj Dhakal</title>
+</head>
+
+<body>
+    <!-- body start -->
+    <header>
+        <nav aria-label="primary-navigation" class="primary-navigation" id="primary-navigation">
+            <img src="./images/logo.png" alt="logo" title="logo" width="20px" height="20px" />
+            <span><a>Niraj Dhakal</a></span>
+            <span><a href="./index.html">Home</a></span>
+            <span><a href="./about.html">About Me</a></span>
+            <span><a href="./projects.html">My Projects</a></span>
+            <span><a href="./contact.html">Contact Me</a></span>
+        </nav>
+        <h1>Contact Me</h1>
+    </header>
+    <main>
+        <section class="contact-form" id="contact-form">
+            <p>
+                "Have a question, suggestion, or project in mind? Let's connect! Drop me a message and I'll get back to you as soon as possible. Whether it's discussing potential collaborations, seeking advice, or just saying hello, I'm here to listen and help. Looking forward to hearing from you!"
+            </p>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Send your inquiry</legend>
+                    <p>
+                        <label for="name">Full Name</label><br />
+                        <input type="text" name="name" id="name" placeholder="Full Name" required />
+                    </p>
+                    <p>
+                        <label for="email">Email</label><br />
+                        <input type="email" name="email" id="email" placeholder="example@domain.com" required />
+                    </p>
+                    <p>
+                        <label for="password">Password</label><br />
+                        <input type="password" name="password" id="password" minlength="5" placeholder="Password" required />
+                    </p>
+                    <p><label for="phone">Contact Number</label><br />
+                        <input type="number" name="phone" id="phone" minlength="10" maxlength="10" min="0" placeholder="Contact Number" required />
+                    </p>
+                    <p>
+                        <label for="message">Your Message</label><br />
+                        <textarea name="message" id="message" cols="20" rows="10" placeholder="Write message" required></textarea>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </section>
+        <section class="my-address" id="my-address">
+            <address>
+                Navadeep Tole, Mahalaxmi - 02, Lalitpur
+            </address>
+        </section>
+    </main>
+</body>
+<footer>
+    <!-- footer start -->
+    <p>
+        Copyright &copy; 2024 Niraj Dhakal
+    </p>
+</footer>
+
+</html>
